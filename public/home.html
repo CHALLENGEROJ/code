@@ -1,0 +1,234 @@
+<!--OJ CODE-->
+
+
+
+<!DOCTYPE html>
+<html>
+<title>WELCOME </title>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<!-- custom js -->
+<script src="./js/main.js"></script>
+<link rel="stylesheet" href="css/main.css">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+
+    <center>
+    <img src="images/m.png" class="user">
+		<br><br>
+    <h4><b><span id="uNameSpan">Your username here!</span></b></h4>
+    <p class="w3-text-grey">Translator</p></center>
+  </div>
+  <div class="w3-bar-block">
+    <a  onclick="w3_close()"  class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="w3-margin-right"><input type="radio" name="radio" id="fr"> <img src="images/leng/france.png" class="user"></i></a>
+    <a  onclick="w3_close()"  class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="w3-margin-right"><input type="radio" name="radio" id="en"> <img src="images/leng/england.png" class="user"></i></a>
+	 <a  onclick="w3_close()"  class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="w3-margin-right"><input type="radio" name="radio" id="gr"> <img src="images/leng/germany.png" class="user"></i></a>
+	<a  onclick="w3_close()"  class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="w3-margin-right"><input type="radio" name="radio" id="it"> <img src="images/leng/italy.png" class="user"></i></a>
+
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-sign-out fa-fw w3-margin-right"></i>LOGOUT</a>
+  </div>
+  <div class="w3-panel w3-large">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="images/logo_white.png" style="width:65px;" class="w3-circle w3-right w3-margin  w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h3><b><center>WELCOME <br><span id="fNameSpan">first name </span> <span id="lNameSpan">last name </span></center></b></h3>
+
+    <center>
+        <p><h4 input type="text" style="text-shadow: #AFAAAB 0.1em 0.1em 0.2em" >
+                YOUR Rank : TRANSLATOR</br></h4>.</p></center>
+    <div class="w3-section w3-bottombar w3-padding-16">
+      <!--<span class="w3-margin-right">Filter:</span> -->
+      <center>
+        <form>
+         <div class="w3-third w3-margin-bottom">
+         <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+
+              <li class="w3-teal w3-xlarge w3-padding-0"></li>
+              </ul></div>
+
+          <div class="w3-third w3-margin-bottom">
+
+            <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+
+              <li class="w3-teal w3-xlarge w3-padding-32">Menu<br></li>
+
+
+            </ul>
+
+          </div>
+
+      <div class="w3-third w3-margin-bottom">
+         <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+
+              <li class="w3-teal w3-xlarge w3-padding-0"></li>
+              </ul></div>
+
+      <!-- Contact Section -->
+      <div class="w3-container w3-padding-large w3-grey">
+        <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px" id="addITEM">
+          <div class="w3-third w3-dark-grey">
+
+            <p><h2>Steak</h2>
+    			<input type="text" placeholder="Item Name" id="item1"></p>
+          </div>
+          <div class="w3-third w3-teal">
+
+            <p>	<h2>Pizza</h2>
+    		<input type="text" placeholder="Item Name"  id="item2"></p>
+          </div>
+          <div class="w3-third w3-dark-grey">
+
+            <p> <h2>Burgers</h2>
+    			   <input type="text" placeholder="Item Name"   id="item3"></p>
+          </div>
+        <!--</div>-->
+    	<div class="w3-third w3-teal">
+
+            <p>	<h2>Salad</h2>
+    		<input type="text" placeholder="Item Name"  id="item4"></p>
+          </div>
+
+
+          <div class="w3-third w3-dark-grey">
+            <p><h2>Icecream</h2>
+    			 <input type="text" placeholder="Item Name"  id="item5"> </p>
+          </div>
+
+          <div class="w3-third w3-teal">
+
+            <p><h2>Soda</h2>
+                <input type="text" placeholder="Item Name"  id="item6"></p>
+          </div>
+
+          <div class="w3-third w3-dark-grey">
+
+            <p><h2>Lemonade</h2>
+    			<input type="text" placeholder="Item Name"  id="item7"></p>
+          </div>
+
+
+           <div class="w3-third w3-teal">
+
+            <p><h2>Beer</h2>
+    			<input type="text" placeholder="Item Name"  id="item8"></p>
+          </div>
+
+          <div class="w3-third w3-dark-grey">
+
+            <p>	<h2>Coffee</h2>
+    			<input type="text" placeholder="Item Name"  id="item9"></p>
+          </div>
+
+    	  <div class="w3-third w3-margin-top">
+         <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+
+              <li class="w3-teal w3-xlarge w3-padding-0"><br><br></li>
+              </ul></div>
+    	  <div class="w3-third w3-dark-grey w3-margin-top">
+            <br>
+    			<input type="submit"  value="Save" class="button" id="save_button"></p>
+
+          </div>
+	  <div class="w3-third w3-margin-top">
+     <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+
+          <li class="w3-teal w3-xlarge w3-padding-0"><br><br></li>
+          </ul></div>
+
+    </div>
+
+
+
+	  </form>
+
+
+
+      </center>
+    </div>
+    </div>
+  </header>
+
+<!--OJ CODE-->
+
+
+ <br><br><br><br><br><br><br><br><br>
+
+<footer class="w3-container w3-padding-32 ">
+<div class="dots" >
+  <div class="fade-top">
+  </div>
+
+</div>
+   </footer>
+
+
+  <div class="footer-bottom">
+        <div class="container">
+					<div class="row">
+						<div class="col-sm-6 ">
+							<div class="copyright-text">
+							    <h3>
+                                  <center> If you need any help <br>
+                                  Please contact us : info@tastycloud.fr</h3>
+                                  <center>
+                                  <p><a href="">About Us</a> |<a href="">Terms & Conditions</a> | <a href="">Refund Policy</a> </p></center>
+                                    <center>
+								<p>CopyRight © 2017 All Rights Reserved Tasty Cloud</p>
+							</div>
+						</div> <!-- End Col -->
+
+				</div>
+    </div>
+
+
+</body>
+
+</html>
+
+
+
+
+
+<!-- End page content -->
+
+<!-- End page content -->
+</div>
+
+<script>
+onLoad();
+AlwaysRun();
+addEventListeners();
+</script>
+
+</body>
+</html>
